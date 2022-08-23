@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Food Recipe App</title>
+
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ </head>
+
+ <body>
+  <nav id="nav">
+   <h1 class="logo"><i class="fa fa-cutlery fa-1x"></i>foodclub</h1>
+
+   <ul class="links">
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="search.html" class="active">Search</a></li>
+
+    <li><a href="recipes.html">Recipes</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+
+  <main>
+   <div class="box">
+    <input type="text" placeholder="Enter an ingredient" id="srch" />
+
+    <button type="submit" class="btn" id="search_btn">
+     <i class="fa fa-search"></i>
+    </button>
+   </div>
+
+   <h2>Your Search Results</h2>
+
+   <div id="con"></div>
+  </main>
+
+  <script src="./js/main.js"></script>
+ </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Food Recipe App</title>
+
+  <link rel="stylesheet" href="./css/contact.css" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- font awesome-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+    <!-- sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ </head>
+
+ <body>
+  <nav id="nav">
+   <h1 class="logo"><i class="fa fa-cutlery fa-1x"></i>foodclub</h1>
+
+   <ul class="links">
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="search.html">Search</a></li>
+
+    <li><a href="recipes.html">Recipes</a></li>
+
+    <li><a class="active" href="contact.html">Contact</a></li>
+   </ul>
+  </nav>
+
+  <div class="container">
+   <h2>Contact Us</h2>
+
+   <div id="error_message"></div>
+
+   <form id="myform" onsubmit="return validation();" action="javascript:sendmail()" method="POST">
+    <div class="field"><input type="text" name="Name" placeholder="Name" id="name" /><br /></div>
+
+    <div class="field"><input type="text" name="Email" placeholder="Email" id="email" /><br /></div>
+
+    <div class="field"><input type="text" name="Number" placeholder="Mobile Number" id="number" /><br /></div>
+
+    <div class="field">
+     <textarea name="Message" rows="10" cols="36" placeholder="Message" id="message"></textarea><br />
+
+     <div class="btn_sub">
+      <button type="submit">Submit</button>
+     </div>
+    </div>
+   </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+  <script src="./js/contact.js"></script>
+
+ </body>
+</html>
